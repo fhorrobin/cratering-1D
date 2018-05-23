@@ -1,10 +1,3 @@
-# 1D Cratering Calculation
+# 1D Cratering Calculation using Huji-RICH CFD code
 
-Use the file `run.py` to run many consecutive simulations for different impactor sizes as sepcified in the file `impactors.txt`.
-
-## Building
-1. Make the RICH code using SCons and ensure all env variables are configured.
-
-2. Run SCons in the home directory for this project
-
-3. Add the desired impactor sizes to the file `impactors.txt` and then run `run.py` to start the simulations.
+Use the `generate_impactors.py` file to generate the desired list of impactor sizes or manually enter them in the file `impactors.txt`. Then use `run.py` to run the simulation. The RICH library must be compiled and the appropriate paths set as outlined on the repository for the RICH code (https://github.com/bolverk/huji-rich/).
