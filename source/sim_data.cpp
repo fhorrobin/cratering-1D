@@ -58,7 +58,7 @@ SimData::SimData(double iw):
   sim_(pg_,
        grid_,
        sr_,
-       TwoSteps(1e-9,-iw,1,1,1e-9),
+       TwoSteps(1e-4,-iw,1,1,1e-4),
        Uniform(1e-9),
        TwoSteps(0,-iw,1,0,0),
        Uniform(0),

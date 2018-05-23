@@ -23,6 +23,8 @@ for size in ob_size:
 
 # Compile the program
 print("Compiling...")
+
+# Use the SConstruct file to make the program.
 os.system("scons")
 
 sim_count = 1
@@ -38,7 +40,7 @@ for ob in ob_size:
     os.system("./build/g++/release/rich > term_log.txt")
     
     # Make a folder for the sim data and move the reslts there
-    f_name = "results/res_" + str(ob)
+    f_name = "res/gamma5_3/res_" + str(ob)
     os.system("mkdir -p " + f_name)
     os.system("mv *.h5 " + f_name)
     os.system("mv term_log.txt " + f_name)
