@@ -46,6 +46,7 @@ namespace {
   }
 }
 
+// Set variable parameters here
 SimData::SimData(double iw):
   pg_(),
   sr_(),
