@@ -49,7 +49,7 @@ namespace {
 SimData::SimData(double iw):
   pg_(),
   sr_(),
-  eos_(5./3.),
+  eos_(1.1),
   rs_(),
   vm_(),
   bc_(),
