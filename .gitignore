@@ -19,6 +19,7 @@ Thumbs.db
 **.la
 **.a
 **.lib
+**.pyc
 
 # Image Files #
 **.png
