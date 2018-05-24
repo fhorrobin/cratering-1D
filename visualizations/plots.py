@@ -17,12 +17,15 @@ def plot_hydro_vars(all_vars, which='duc'):
         
     ax[len(which) - 1].set_xlabel('radius', fontsize='large')
     
+    return ax
+    
     
 def plot_velocity_data(upper, folder):
     dat = np.loadtxt(vis.full_path(upper, folder, 'velocity_history.txt'))
     
     fig, ax = plt.subplots(figsize=(10,6))
     ax.plot(dat[:,0], dat[:,1])
+    return ax
     
     
 def plot_shock_front(ax, vars=None, fname=None, axis=True):
@@ -64,6 +67,8 @@ def many_shock_front(num, files, path, gamma, end=0.3):
         skip += 1
       
     plot_shock_front(ax, axis=True)
+    
+    return ax
 
     
 def fit_breakout_velocity(impactors, breakout_v, deg=1):
